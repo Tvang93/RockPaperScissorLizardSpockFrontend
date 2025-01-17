@@ -1,0 +1,55 @@
+/* Scoring Content ------------------------- Start */
+
+.scoring-content {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.scoring-squares {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* User CSS */
+.user-score {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.user-score h1 {
+    font-size: 96px;
+}
+
+.scoring-row {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+}
+
+/* Vs logo */
+.vs-margin {
+    margin-top: 57px;
+}
+
+.vs-margin h2 {
+    font-size: 96px;
+}
+
+/* Cpu Css */
+.cpu-score {
+    display: flex;
+    flex-direction: column;
+}
+
+.cpu-score h1 {
+    font-size: 96px;
+}
+
+.scoring-row-2 {
+    display: flex;
+    gap: 24px;
+}
