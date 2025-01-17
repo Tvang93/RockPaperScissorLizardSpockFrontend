@@ -1,0 +1,30 @@
+.button-section {
+    margin-top: 88px;
+}
+
+.rpsls-choices {
+    display: flex;
+    justify-content: center;
+    gap: 100px
+}
+
+.rpsls-choices div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rpsls-choices button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.rpsls-choices img {
+    width: 90px;
+    height: 90px;
+}
+
+.rpsls-choices p {
+    font-size: 24px;
+}

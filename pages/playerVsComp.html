@@ -19,13 +19,19 @@
         </div>
     </header>
 
+    <section class="round-section">
+        <div id="roundContainer">
+            <h1 id="roundNumber">Round 1</h1>
+        </div>
+    </section>
+
     <section class="scoring-content">
         <div class="user-score">
             <h1>Player</h1>
             <div id="userSelection" class="user-selection">
                 <h2 id="userSelectionPlaceHolder">?</h2>
             </div>
-            <div class="scoring-row">
+            <div id="p1Score" class="scoring-row">
                 <div class="scoring-squares"></div>
                 <div class="scoring-squares"></div>
                 <div class="scoring-squares"></div>
@@ -40,7 +46,7 @@
             <div id="cpuSelection" class="cpu-selection">
                 <h2 id="cpuSelectionPlaceHolder">?</h2>
             </div>
-            <div class="scoring-row-2">
+            <div id="p2Score" class="scoring-row-2">
                 <div class="scoring-squares"></div>
                 <div class="scoring-squares"></div>
                 <div class="scoring-squares"></div>
@@ -52,33 +58,34 @@
     <section class="button-section">
         <div class="rpsls-choices">
             <div>
-                <a href=""><img src="../assets/rock.png" alt=""></a>
+                <button><img class="choice-img" src="../assets/rock.png" alt=""></button>
                 <p>Rock</p>
             </div>
             <div>
-                <a href=""><img src="../assets/scroll.png" alt=""></a>
+                <button><img class="choice-img" src="../assets/scroll.png" alt=""></button>
                 <p>Paper</p>
             </div>
             <div>
-                <a href=""><img src="../assets/scissors.png" alt=""></a>
+                <button><img class="choice-img" src="../assets/scissors.png" alt=""></button>
                 <p>Scissor</p>
             </div>
             <div>
-                <a href=""><img src="../assets/lizard.png" alt=""></a>
+                <button><img class="choice-img" src="../assets/lizard.png" alt=""></button>
                 <p>Lizard</p>
             </div>
             <div>
-                <a href=""><img src="../assets/raygun.png" alt=""></a>
+                <button><img class="choice-img" src="../assets/raygun.png" alt=""></button>
                 <p>Spock</p>
             </div>
            
         </div>
-        <div>
-
+        <div class="">
+            <button>Shoot</button>
+            <button>New Game</button>
         </div>
     </section>
 
-    <script src="../Scripts/app.js"></script>
+    <script type="module" src="../Scripts/app.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 .scoring-content {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 150px;
 }
 
 .scoring-squares {
@@ -24,6 +24,10 @@
     font-size: 96px;
 }
 
+.user-selection h2{
+    font-size: 90px;
+}
+
 .scoring-row {
     display: flex;
     justify-content: end;
@@ -32,7 +36,7 @@
 
 /* Vs logo */
 .vs-margin {
-    margin-top: 57px;
+    margin-top: 265px;
 }
 
 .vs-margin h2 {
@@ -49,7 +53,12 @@
     font-size: 96px;
 }
 
+.cpu-selection h2{
+    font-size: 90px;
+}
+
 .scoring-row-2 {
     display: flex;
     gap: 24px;
 }
+
