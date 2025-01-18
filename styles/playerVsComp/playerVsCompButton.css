@@ -1,5 +1,5 @@
 .button-section {
-    margin-top: 88px;
+    margin-top: 40px;
 }
 
 .rpsls-choices {
@@ -23,8 +23,36 @@
 .rpsls-choices img {
     width: 90px;
     height: 90px;
+    margin: 24px 8px 0;
 }
 
 .rpsls-choices p {
     font-size: 24px;
+}
+
+.shoot-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.shoot-container button {
+    width: 128px;
+    height: 62px;
+    background-color: #0DFF00;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 60px
+}
+
+#newGameBtn {
+    background-color: #ff0000;
+}
+
+.active-selection {
+    background-color: #FDFF94 !important;
+    border: 1px solid black !important;
+    border-radius: 15px !important;
 }

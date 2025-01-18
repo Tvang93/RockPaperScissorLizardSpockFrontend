@@ -13,19 +13,9 @@
     background-color: white;
 }
 
-/* User CSS */
-.user-score {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.user-score h1 {
-    font-size: 96px;
-}
-
-.user-selection h2{
+.selection-img h2{
     font-size: 90px;
+    margin: 40px 0;
 }
 
 .scoring-row {
@@ -34,6 +24,28 @@
     gap: 24px;
 }
 
+.p1score {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.p1score h1 {
+    font-size: 96px;
+    margin-bottom: 0;
+}
+
+.p2score {
+    display: flex;
+    flex-direction: column;
+}
+
+.p2score h1 {
+    font-size: 96px;
+    margin-bottom: 0;
+}
+
+
 /* Vs logo */
 .vs-margin {
     margin-top: 265px;
@@ -41,24 +53,5 @@
 
 .vs-margin h2 {
     font-size: 96px;
+    margin: 0;
 }
-
-/* Cpu Css */
-.cpu-score {
-    display: flex;
-    flex-direction: column;
-}
-
-.cpu-score h1 {
-    font-size: 96px;
-}
-
-.cpu-selection h2{
-    font-size: 90px;
-}
-
-.scoring-row-2 {
-    display: flex;
-    gap: 24px;
-}
-

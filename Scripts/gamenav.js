@@ -1,5 +1,3 @@
-
-
 function HomeNav() {
   homePlayBtn.classList = "inactive";
   let chosePvp = false;
@@ -51,9 +49,8 @@ function HomeNav() {
   });
 
   oneMatchBtn.addEventListener("click", function () {
-    const link = document.createElement("a");
-    link.href = "./pages/playerVsComp.html";
-    link.click();
+    pveLink();
+
   });
 
   homeBtnContainer.appendChild(pvpBtn);
@@ -61,4 +58,12 @@ function HomeNav() {
   homeBtnContainer.appendChild(backBtn);
 }
 
-export { HomeNav };
+function pveLink(){
+  const link = document.createElement("a");
+  link.href = "./pages/playerVsComp.html";
+  link.click();
+}
+
+
+
+export { HomeNav, pveLink };
