@@ -35,8 +35,9 @@ https://rckpprscrlzdspk-gnb2bqcpf6adgrdq.westus-01.azurewebsites.net/RckPprScrLz
 Appoved by Jacob
 https://www.figma.com/design/ZnIXW7lhkrCUHutajkpXOG/Projects-2?node-id=84-2&t=AlQ1qNp5Jt9tu96G-1
 
-### Peer Review:
-by: 
+### Peer Review: 
+by: Charles Orr
+I really like the look of your design, i cant find anything to give recommendations about, i really liked your solution for the pvp it was very creative, great work, keep it up :)
 
 
 
