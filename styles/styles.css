@@ -1,6 +1,7 @@
 @import url(./playerVsComp/playerVsCompRound.css);
 @import url(./playerVsComp/playerVsCompScoring.css);
 @import url(./playerVsComp/playerVsCompButton.css);
+@import url(./playerVsComp/playerVsCompResults.css);
 
 body {
     background-image:

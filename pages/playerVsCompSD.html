@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Vs Computer</title>
+    <title>Player Vs Computer Sudden Death</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
@@ -22,6 +22,7 @@
     <section class="round-section">
         <div id="roundContainer">
             <h1 id="round">Round 1</h1>
+            <p id="winner"></p>
         </div>
     </section>
 
@@ -30,11 +31,12 @@
             <h1>Player</h1>
             <div id="userSelection" class="selection-img">
                 <h2 id="userSelectionPlaceHolder">?</h2>
+                <img id="userSelectionImg" src="" alt="">
             </div>
             <div id="p1Score" class="scoring-row">
-                <div class="scoring-squares"></div>
-                <div class="scoring-squares"></div>
-                <div class="scoring-squares"></div>
+                <div class="scoring-squares inactive"></div>
+                <div class="scoring-squares inactive"></div>
+                <div class="scoring-squares inactive"></div>
                 <div id="p1ScoreBox1" class="scoring-squares"></div>
             </div>
         </div>
@@ -45,12 +47,13 @@
             <h1>CPU</h1>
             <div id="cpuSelection" class="selection-img">
                 <h2 id="cpuSelectionPlaceHolder">?</h2>
+                <img id="cpuSelectionImg" src="" alt="">
             </div>
             <div id="p2Score" class="scoring-row">
-                <div  id="cpuScoreBox1" class="scoring-squares"></div>
-                <div class="scoring-squares"></div>
-                <div class="scoring-squares"></div>
-                <div class="scoring-squares"></div>
+                <div id="cpuScoreBox1" class="scoring-squares"></div>
+                <div class="scoring-squares inactive"></div>
+                <div class="scoring-squares inactive"></div>
+                <div class="scoring-squares inactive"></div>
             </div>
         </div>
     </section>
@@ -62,11 +65,11 @@
                 <p>Rock</p>
             </button>
             <button id="paperBtn">
-                <img class="choice-img" src="../assets/scroll.png" alt="">
+                <img class="choice-img" src="../assets/paper.png" alt="">
                 <p>Paper</p>
             </button>
             <button id="scissorBtn">
-                <img class="choice-img" src="../assets/scissors.png" alt="">
+                <img class="choice-img" src="../assets/scissor.png" alt="">
                 <p>Scissor</p>
             </button>
             <button id="lizardBtn">
@@ -74,16 +77,23 @@
                 <p>Lizard</p>
             </button>
             <button id="spockBtn">
-                <img class="choice-img" src="../assets/raygun.png" alt="">
+                <img class="choice-img" src="../assets/spock.png" alt="">
                 <p>Spock</p>
             </button>
-           
         </div>
         <div class="shoot-container">
             <button id="shootBtn">Shoot</button>
             <button id="newGameBtn">New Game</button>
         </div>
     </section>
+
+    <section class="results-section">
+        <div id="pveResultsConatainer" class="results-container">
+            <h1 id="pveResults">You Lose</h1>
+            <button id="pvePlayAgainBtn">Play Again</button>
+        </div>
+    </section>
+
 
     <script type="module" src="../Scripts/app.js"></script>
 </body>

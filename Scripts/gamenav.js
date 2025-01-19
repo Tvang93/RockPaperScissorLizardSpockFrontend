@@ -49,8 +49,15 @@ function HomeNav() {
   });
 
   oneMatchBtn.addEventListener("click", function () {
-    pveLink();
+    PveLink("playerVsCompSD.html");
+  });
 
+  fiveMatchBtn.addEventListener("click", function () {
+    PveLink("playerVsCompBO5.html");
+  });
+
+  sevenMatchBtn.addEventListener("click", function () {
+    PveLink("playerVsCompBO7.html");
   });
 
   homeBtnContainer.appendChild(pvpBtn);
@@ -58,12 +65,10 @@ function HomeNav() {
   homeBtnContainer.appendChild(backBtn);
 }
 
-function pveLink(){
+function PveLink(url){
   const link = document.createElement("a");
-  link.href = "./pages/playerVsComp.html";
+  link.href = `./pages/${url}`;
   link.click();
 }
 
-
-
-export { HomeNav, pveLink };
+export { HomeNav };
