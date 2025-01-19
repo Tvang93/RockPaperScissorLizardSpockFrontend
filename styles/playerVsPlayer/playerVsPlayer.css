@@ -1,8 +1,5 @@
 @import url(../playerVsComp/playerVsComp.css);
 
-.scoring-content {
-    gap: 100px
-}
 
 .scoring-content h3 {
     font-size: 40px;
@@ -16,7 +13,7 @@
     display: flex;
     justify-content: center;
     margin: 30px 0;
-    gap: 310px;
+    gap: 410px;
 }
 
 .player-keys-container {

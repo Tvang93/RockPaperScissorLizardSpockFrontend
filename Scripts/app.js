@@ -45,10 +45,8 @@ const pveResults = document.getElementById("pveResults");
 const pvePlayAgainBtn = document.getElementById("pvePlayAgainBtn");
 
 let player1choice = "";
-let player2choice = "";
 let cpuChoice = "";
 let player1Score = 0;
-let player2Score = 0;
 let cpuScore = 0;
 
 let pathname = window.location.pathname.slice(7);
