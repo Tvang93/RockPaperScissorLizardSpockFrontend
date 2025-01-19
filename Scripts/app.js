@@ -19,11 +19,13 @@ const userSelectionImg = document.getElementById("userSelectionImg");
 const userSelectionPlaceHolder = document.getElementById("userSelectionPlaceHolder");
 const cpuSelectionImg = document.getElementById("cpuSelectionImg");
 const cpuSelectionPlaceHolder = document.getElementById("cpuSelectionPlaceHolder");
-const rockBtn = document.getElementById("rockBtn");
-const paperBtn = document.getElementById("paperBtn");
-const scissorBtn = document.getElementById("scissorBtn");
-const lizardBtn = document.getElementById("lizardBtn");
-const spockBtn = document.getElementById("spockBtn");
+const choiceBtns = [
+    document.getElementById("rockBtn"),
+    document.getElementById("paperBtn"),
+    document.getElementById("scissorBtn"),
+    document.getElementById("lizardBtn"),
+    document.getElementById("spockBtn")
+];
 const shootBtn = document.getElementById("shootBtn");
 const newGameBtn = document.getElementById("newGameBtn");
 const p1ScoreBox = [
@@ -49,7 +51,6 @@ let player1Score = 0;
 let player2Score = 0;
 let cpuScore = 0;
 
-let roundNumber = 1;
 let pathname = window.location.pathname.slice(7);
 GetCpuChoice();
 
@@ -59,31 +60,31 @@ if(homePlayBtn !== null){
     })
 };
 
-rockBtn.addEventListener("click", function(){
+choiceBtns[0].addEventListener("click", function(){
     player1choice = "rock";
     ResetChoice();
     rockBtn.classList = "active-selection";
 });
 
-paperBtn.addEventListener("click", function(){
+choiceBtns[1].addEventListener("click", function(){
     player1choice = "paper";
     ResetChoice();
     paperBtn.classList = "active-selection";
 });
 
-scissorBtn.addEventListener("click", function(){
+choiceBtns[2].addEventListener("click", function(){
     player1choice = "scissor";
     ResetChoice();
     scissorBtn.classList = "active-selection";
 });
 
-lizardBtn.addEventListener("click", function(){
+choiceBtns[3].addEventListener("click", function(){
     player1choice = "lizard";
     ResetChoice();
     lizardBtn.classList = "active-selection";
 });
 
-spockBtn.addEventListener("click", function(){
+choiceBtns[4].addEventListener("click", function(){
     player1choice = "spock";
     ResetChoice();
     spockBtn.classList = "active-selection";
@@ -130,11 +131,7 @@ async function GetCpuChoice() {
 }
 
 function ResetChoice(){
-    rockBtn.classList = "";
-    paperBtn.classList = "";
-    scissorBtn.classList = "";
-    lizardBtn.classList = "";
-    spockBtn.classList = "";
+    choiceBtns.forEach(button => button.classList.remove("active-selection"))
 }
 
 function ReloadPage(){
