@@ -1,8 +1,3 @@
-@import url(./playerVsComp/playerVsCompRound.css);
-@import url(./playerVsComp/playerVsCompScoring.css);
-@import url(./playerVsComp/playerVsCompButton.css);
-@import url(./playerVsComp/playerVsCompResults.css);
-
 body {
     background-image:
     linear-gradient(45deg, #f0f0f0 25%, transparent 25%),

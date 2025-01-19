@@ -1,16 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player vs Player</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/playerVsPlayer/playerVsPlayer.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="navbar-rpsls">
+            <a href="../index.html"><button>home</button></a>
+            <div>
+                <button>rules</button>
+                <button>setting</button>
+            </div>
+        </div>
+    </header>
 
-    
+    <section class="round-section">
+        <div id="roundContainer">
+            <h1 id="round">Round 1</h1>
+            <p id="winner"></p>
+        </div>
+    </section>
 
-    <script type="module" src="../Scripts/pvplogic.js"></script>
+    <section class="scoring-content">
+        <div class="p1score">
+            <h1>Player 1</h1>
+            <div id="userSelection" class="selection-img">
+                <h2 id="userSelectionPlaceHolder">?</h2>
+                <h3 id="p1Ready">Ready</h3>
+                <img id="userSelectionImg" src="" alt="">
+            </div>
+            <div id="p1Score" class="scoring-row">
+                <div id="p1ScoreBox2" class="scoring-squares"></div>
+                <div id="p1ScoreBox1" class="scoring-squares"></div>
+            </div>
+        </div>
+        <div class="vs-margin">
+            <h2>VS</h2>
+        </div>
+        <div class="p2score">
+            <h1>Player 2</h1>
+            <div id="cpuSelection" class="selection-img">
+                <h2 id="cpuSelectionPlaceHolder">?</h2>
+                <h3 id="p2Ready">Ready</h3>
+                <img id="cpuSelectionImg" src="" alt="">
+            </div>
+            <div id="p2Score" class="scoring-row">
+                <div id="cpuScoreBox1" class="scoring-squares"></div>
+                <div id="cpuScoreBox2" class="scoring-squares"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-selection-section">
+        <div class="player-keys-container">
+            <div>
+                <img src="../assets/rock.png" alt="rock">
+                <p>Rock</p>
+                <h1>W</h1>
+            </div>
+            <div>
+                <img src="../assets/paper.png" alt="paper">
+                <p>Paper</p>
+                <h1>A</h1>
+            </div>
+            <div>
+                <img src="../assets/scissor.png" alt="scissor">
+                <p>Scissor</p>
+                <h1>S</h1>
+            </div>
+            <div>
+                <img src="../assets/lizard.png" alt="lizard">
+                <p>Lizard</p>
+                <h1>D</h1>
+            </div>
+            <div>
+                <img src="../assets/spock.png" alt="raygun">
+                <p>Spock</p>
+                <h1>F</h1>
+            </div>
+        </div>
+        <div class="player-keys-container">
+            <div>
+                <img src="../assets/rock.png" alt="rock">
+                <p>Rock</p>
+                <h1>I</h1>
+            </div>
+            <div>
+                <img src="../assets/paper.png" alt="paper">
+                <p>Paper</p>
+                <h1>L</h1>
+            </div>
+            <div>
+                <img src="../assets/scissor.png" alt="scissor">
+                <p>Scissor</p>
+                <h1>K</h1>
+            </div>
+            <div>
+                <img src="../assets/lizard.png" alt="lizard">
+                <p>Lizard</p>
+                <h1>J</h1>
+            </div>
+            <div>
+                <img src="../assets/spock.png" alt="raygun">
+                <p>Spock</p>
+                <h1>H</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div id="pveResultsConatainer" class="results-container">
+            <h1 id="pveResults">You Lose</h1>
+            <button id="pvePlayAgainBtn">Play Again</button>
+        </div>
+    </section>
+
+    <div class="input">
+        <input type="text" id="p1Rock" maxlength="1" placeholder="Click Here Then Press Entries" readOnly>
+    </div>
+
+    <script src="../Scripts/pvplogic.js"></script>
 </body>
+
 </html>

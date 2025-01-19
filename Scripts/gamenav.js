@@ -22,6 +22,10 @@ function HomeNav() {
   backBtn.innerText = "Back";
   backBtn.style.background = "red";
 
+  pvpBtn.addEventListener("click", function(){
+    Link("playerVsPlayer.html")
+  })
+
   pveBtn.addEventListener("click", function () {
     chosePve = true;
     pvpBtn.classList = "inactive";
@@ -49,15 +53,15 @@ function HomeNav() {
   });
 
   oneMatchBtn.addEventListener("click", function () {
-    PveLink("playerVsCompSD.html");
+    Link("playerVsCompSD.html");
   });
 
   fiveMatchBtn.addEventListener("click", function () {
-    PveLink("playerVsCompBO5.html");
+    Link("playerVsCompBO5.html");
   });
 
   sevenMatchBtn.addEventListener("click", function () {
-    PveLink("playerVsCompBO7.html");
+    Link("playerVsCompBO7.html");
   });
 
   homeBtnContainer.appendChild(pvpBtn);
@@ -65,7 +69,7 @@ function HomeNav() {
   homeBtnContainer.appendChild(backBtn);
 }
 
-function PveLink(url){
+function Link(url){
   const link = document.createElement("a");
   link.href = `./pages/${url}`;
   link.click();
