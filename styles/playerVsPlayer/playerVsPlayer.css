@@ -3,6 +3,7 @@
 
 .scoring-content h3 {
     font-size: 40px;
+    margin: 20px 0
 }
 
 .p2score h1 {
@@ -30,6 +31,10 @@
 .player-keys-container h1 {
     margin: 0;
     font-size: 3rem;
+}
+
+.shoot-container {
+    margin: 0;
 }
 
 .input {

@@ -11,10 +11,9 @@
 <body>
     <header>
         <div class="navbar-rpsls">
-            <a href="../index.html"><button>home</button></a>
+            <a href="../index.html"><img id="homeBtn" src="../assets/homeLM.png" alt="home"></a>
             <div>
-                <button>rules</button>
-                <button>setting</button>
+                <button id="rulesBtn">Rules</button>
             </div>
         </div>
     </header>
@@ -94,6 +93,79 @@
         </div>
     </section>
 
+    <section class="rules-section" id="rulesSection">
+        <div class="rules-header">
+            <h1>Rules</h1>
+            <button id="closeRulesBtn">X</button>
+        </div>
+        <div class="rules-body">
+            <div class="rules-body-content">
+                <h1 class="rock">Rocks -</h1>
+                <h2>Beats:</h2>
+                <div class="twoRow">
+                    <h2 class="scissor">Scissor</h2>
+                    <h2 class="lizard">Lizard</h2>
+                </div>
+                <h2>Loses To:</h2>
+                <div class="twoRow">
+                    <h2 class="paper">Paper</h2>
+                    <h2 class="spock">Spock</h2>
+                </div>
+            </div>
+            <div class="rules-body-content">
+                <h1 class="paper">Paper -</h1>
+                <h2>Beats:</h2>
+                <div class="twoRow">
+                    <h2 class="rock">Rock</h2>
+                    <h2 class="spock">Spock</h2>
+                </div>
+                <h2>Loses To:</h2>
+                <div class="twoRow">
+                    <h2 class="scissor">Scissor</h2>
+                    <h2 class="lizard">Lizard</h2>
+                </div>
+            </div>
+            <div class="rules-body-content">
+                <h1 class="scissor">Scissor -</h1>
+                <h2>Beats:</h2>
+                <div class="twoRow">
+                    <h2 class="lizard">Lizard</h2>
+                    <h2 class="paper">Paper</h2>
+                </div>
+                <h2>Loses To:</h2>
+                <div class="twoRow">
+                    <h2 class="spock">Spock</h2>
+                    <h2 class="rock">Rock</h2>
+                </div>
+            </div>
+            <div class="rules-body-content">
+                <h1 class="lizard">Lizard -</h1>
+                <h2>Beats:</h2>
+                <div class="twoRow">
+                    <h2 class="spock">Spock</h2>
+                    <h2 class="paper">Paper</h2>
+                </div>
+                <h2>Loses To:</h2>
+                <div class="twoRow">
+                    <h2 class="rock">Rock</h2>
+                    <h2 class="scissor">Scissor</h2>
+                </div>
+            </div>
+            <div class="rules-body-content">
+                <h1 class="spock">Spocks -</h1>
+                <h2>Beats:</h2>
+                <div class="twoRow">
+                    <h2 class="rock">Rock</h2>
+                    <h2 class="scissor">Scissor</h2>
+                </div>
+                <h2>Loses To:</h2>
+                <div class="twoRow">
+                    <h2 class="paper">Paper</h2>
+                    <h2 class="lizard">Lizard</h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="../Scripts/app.js"></script>
 </body>

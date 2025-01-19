@@ -8,6 +8,11 @@ import {
     NextRound  
 } from "./shootbtnlogic.js"
 
+const homeBtn = document.getElementById("homeButton");
+const rulesBtn = document.getElementById("rulesBtn");
+const closeRulesBtn = document.getElementById("closeRulesBtn");
+const rulesSection = document.getElementById("rulesSection");
+
 const homeBtnContainer = document.getElementById("homeBtnContainer");
 const homePlayBtn = document.getElementById("homePlayBtn");
 
@@ -58,69 +63,82 @@ if(homePlayBtn !== null){
     })
 };
 
-choiceBtns[0].addEventListener("click", function(){
-    player1choice = "rock";
-    ResetChoice();
-    rockBtn.classList = "active-selection";
-});
+rulesBtn.addEventListener("click", function(){
+    rulesSection.style.display = "flex";
+})
 
-choiceBtns[1].addEventListener("click", function(){
-    player1choice = "paper";
-    ResetChoice();
-    paperBtn.classList = "active-selection";
-});
+closeRulesBtn.addEventListener("click", function(){
+    rulesSection.style.display = "none";
+})
 
-choiceBtns[2].addEventListener("click", function(){
-    player1choice = "scissor";
-    ResetChoice();
-    scissorBtn.classList = "active-selection";
-});
+if(choiceBtns !== null){
+    choiceBtns[0].addEventListener("click", function(){
+        player1choice = "rock";
+        ResetChoice();
+        rockBtn.classList = "active-selection";
+    });
+    
+    choiceBtns[1].addEventListener("click", function(){
+        player1choice = "paper";
+        ResetChoice();
+        paperBtn.classList = "active-selection";
+    });
+    
+    choiceBtns[2].addEventListener("click", function(){
+        player1choice = "scissor";
+        ResetChoice();
+        scissorBtn.classList = "active-selection";
+    });
+    
+    choiceBtns[3].addEventListener("click", function(){
+        player1choice = "lizard";
+        ResetChoice();
+        lizardBtn.classList = "active-selection";
+    });
+    
+    choiceBtns[4].addEventListener("click", function(){
+        player1choice = "spock";
+        ResetChoice();
+        spockBtn.classList = "active-selection";
+    });
+}
 
-choiceBtns[3].addEventListener("click", function(){
-    player1choice = "lizard";
-    ResetChoice();
-    lizardBtn.classList = "active-selection";
-});
-
-choiceBtns[4].addEventListener("click", function(){
-    player1choice = "spock";
-    ResetChoice();
-    spockBtn.classList = "active-selection";
-});
-
-
-shootBtn.addEventListener("click", function(){
-    if(player1choice !== ""){
-        GetCpuChoice();
-        CpuChoiceImg(cpuChoice);
-        UserChoiceImg(player1choice);
-        let num = Shoot(player1choice, cpuChoice);
-        if(num == 1){
-            player1Score++;
-            p1ScoreBox[player1Score-1].style.backgroundColor = "rgb(4, 219, 0)";
-            winner.innerText = `Player Won Last Round!`;
-            winner.style.color = "rgb(4, 219, 0)";
-        }else if(num == 2){
-            cpuScore++;
-            cpuScoreBox[cpuScore-1].style.backgroundColor = "rgb(219, 0, 0)";
-            winner.innerText = `CPU Won Last Round.`;
-            winner.style.color = "rgb(219, 0, 0)";
-        }else{
-            winner.innerText = "Tie.";
-            winner.style.color = "black";
+if(shootBtn !== null){
+    shootBtn.addEventListener("click", function(){
+        if(player1choice !== ""){
+            GetCpuChoice();
+            CpuChoiceImg(cpuChoice);
+            UserChoiceImg(player1choice);
+            let num = Shoot(player1choice, cpuChoice);
+            if(num == 1){
+                player1Score++;
+                p1ScoreBox[player1Score-1].style.backgroundColor = "rgb(4, 219, 0)";
+                winner.innerText = `Player Won Last Round!`;
+                winner.style.color = "rgb(4, 219, 0)";
+            }else if(num == 2){
+                cpuScore++;
+                cpuScoreBox[cpuScore-1].style.backgroundColor = "rgb(219, 0, 0)";
+                winner.innerText = `CPU Won Last Round.`;
+                winner.style.color = "rgb(219, 0, 0)";
+            }else{
+                winner.innerText = "Tie.";
+                winner.style.color = "black";
+            }
+            NextRound(pathname);
+            CheckWinner(player1Score, cpuScore, pathname);
         }
-        NextRound(pathname);
-        CheckWinner(player1Score, cpuScore, pathname);
-    }
-});
+    });
+}
 
-newGameBtn.addEventListener("click", function(){
-    ReloadPage();
-});
-
-pvePlayAgainBtn.addEventListener("click", function(){
-    ReloadPage();
-});
+if(newGameBtn !== null){
+    newGameBtn.addEventListener("click", function(){
+        ReloadPage();
+    });
+    
+    pvePlayAgainBtn.addEventListener("click", function(){
+        ReloadPage();
+    });
+}
 
 async function GetCpuChoice() {
     const promise = await fetch('https://rckpprscrlzdspk-gnb2bqcpf6adgrdq.westus-01.azurewebsites.net/RckPprScrLzdSpk/CpuChoice');

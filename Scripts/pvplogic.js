@@ -1,3 +1,7 @@
+const rulesBtn = document.getElementById("rulesBtn");
+const closeRulesBtn = document.getElementById("closeRulesBtn");
+const rulesSection = document.getElementById("rulesSection");
+
 const cpuSelectionPlaceHolder = document.getElementById("cpuSelectionPlaceHolder");
 const cpuSelectionImg = document.getElementById("cpuSelectionImg");
 const userSelectionPlaceHolder = document.getElementById("userSelectionPlaceHolder");
@@ -39,6 +43,18 @@ const beats = {
     spock: ["rock", "scissor"],
 }
 let pathname = window.location.pathname.slice(7);
+
+rulesBtn.addEventListener("click", function(){
+    rulesSection.style.display = "flex";
+    inputBox.style.display = "none";
+})
+
+closeRulesBtn.addEventListener("click", function(){
+    rulesSection.style.display = "none";
+    if(pveResultsConatainer.style.display !== "flex"){
+        inputBox.style.display = "block";
+    }
+})
 
 inputBox.addEventListener("keypress", function(event){
     console.log(event.key);

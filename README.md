@@ -43,3 +43,12 @@ by:
 
 
 
+homeDM: <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+homeLM: <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+settingDM: <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Pixel perfect - Flaticon</a>
+settingLM: <a href="https://www.flaticon.com/free-icons/settings" title="settings icons">Settings icons created by Pixel perfect - Flaticon</a>
+rock: <a href="https://www.flaticon.com/free-icons/rock" title="rock icons">Rock icons created by Freepik - Flaticon</a>
+paper: <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a>
+scissor: <a href="https://www.flaticon.com/free-icons/scissors" title="scissors icons">Scissors icons created by Freepik - Flaticon</a>
+lizard: <a href="https://www.flaticon.com/free-icons/lizard" title="lizard icons">Lizard icons created by Good Ware - Flaticon</a>
+raygun: <a href="https://www.flaticon.com/free-icons/alien-gun" title="alien gun icons">Alien gun icons created by juicy_fish - Flaticon</a>
